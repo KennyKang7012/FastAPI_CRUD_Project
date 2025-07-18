@@ -24,3 +24,27 @@ Choose the structure that fits your project:
 - **Language-agnostic structure** - works with Python, JS, Java, etc.
 - **Scalable** - start simple, grow as needed
 - **Flexible** - choose complexity level based on project needs
+
+## How to Run the Project
+
+1.  **Install Dependencies (using virtual environment):**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+2.  **Start the Application (development mode):**
+    ```bash
+    uvicorn src.main:app --reload
+    ```
+    After starting, you can browse `http://127.0.0.1:8000/docs` to view and test the automatically generated interactive API documentation.
+
+## How to Run Tests
+
+1.  **Activate the virtual environment:**
+    ```bash
+    .\venv\Scripts\activate
+    ```
+2.  **Run tests:**
+    ```bash
+    pytest
+    ```
