@@ -12,7 +12,7 @@ def test_create_item():
     data = response.json()
     assert data["name"] == "Test Item"
     assert data["price"] == 10.5
-    assert "id" in data
+    assert "id" in data 
 
 def test_read_items():
     response = client.get("/items/")
